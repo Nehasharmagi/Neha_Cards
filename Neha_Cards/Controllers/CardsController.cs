@@ -20,9 +20,17 @@ namespace Neha_Cards.Controllers
         }
 
         // GET: Cards
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Cards.ToListAsync());
+            var cards = from m in _context.Cards
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(s => s.CardType.Contains(searchString));
+            }
+
+            return View(await cards.ToListAsync());
         }
 
         // GET: Cards/Details/5

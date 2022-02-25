@@ -8,7 +8,14 @@
 
 <p>
     <a asp-action="Create">Create New</a>
+
 </p>
+<form asp-controller="Cards" asp-action="Index">
+    <p>
+        Card Type: <input type="text" name="SearchString" method="get" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>

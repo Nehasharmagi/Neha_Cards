@@ -97,6 +97,49 @@ namespace Neha_Cards.Models
                         Rating = 8
 
 
+                    },
+                    new Cards
+                    {
+                        CardSize = "Meduim",
+                        CardType = "Jack card",
+                        BrandName = "JP Morgan chase",
+                        Desgin = "Cri Clubs",
+                        Color = "Red",
+                        Rating = 8
+
+
+                    },
+                    new Cards
+                    {
+                        CardSize = "Regular",
+                        CardType = "Jack",
+                        BrandName = "Morgan chase",
+                        Desgin = "Cri Clubs",
+                        Color = "Black",
+                        Rating = 8
+
+
+                    },
+                    new Cards
+                    {
+                        CardSize = "Standard",
+                        CardType = "Jack Card",
+                        BrandName = "JP Morgan chase",
+                        Desgin = "Cri Clubs",
+                        Color = "Red",
+                        Rating = 8
+
+
+                    }, new Cards
+                    {
+                        CardSize = "Meduim",
+                        CardType = "Jack",
+                        BrandName = "Morgan chase",
+                        Desgin = "Clubs",
+                        Color = "Black",
+                        Rating = 8
+
+
                     }
 
 
